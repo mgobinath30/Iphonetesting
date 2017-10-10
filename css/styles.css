@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color: #191919;
+}
+
+/*Links */
+
+a{
+	color: #662D91;
+}
+
+a:hover{
+	color: #B34FFF;
+}
+
+#abright a{
+	color:#B34FFF;
+}
+
+
+#top-slider{
+	/*min-height: 300px;*/
+	background-color:#323232;
+	width: 100%;
+	margin: 0;
+	padding: 0px;
+}
+
+.row{
+	margin-left: 0;
+	margin-right: 0px;
+}
+
+#navbar-top{
+	background-color: #222222;
+
+}
+
+#brandlogo{
+	position: relative;
+	top: -8px;
+}
+
+#three_buckets{
+	min-height: 300px;
+	display: flex;
+
+}
+
+#three_buckets-single{
+	background-color: #6F6F6F;
+}
+
+.bucket-inner{
+	margin-top: 15px;
+	background-color: #525252;
+	border: #E7E7E7 solid thin;
+	flex: auto;
+	
+}
+
+.col-xs-12{
+
+}
+
+.col-sm-4{
+
+}
+
+#about {
+	padding-top: 40px;
+	background: #FFFFFF;
+	padding-bottom: 40px;
+	border-top:#662D91 thick solid;
+
+}
+
+#whitepaper-promo{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: #FFFFFF;
+	border-top:#662D91 thick solid;
+}
+
+.btn-buckets {
+	position:absolute;
+	top: 80%;
+}
+
+
+/*Three Buckets styles*/
+.container{padding-left:0px; padding-right: 0px;
+}
+
+#bucket-bar{
+	border-top: #662D91 6px solid;
+	background:#D3D3D3;
+}
+
+#three-buckets{
+	min-height: 350px;
+	background: #EEEEEE;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#bucket-inner{
+	margin: 20px;
+	padding: 20px;
+	background: #666666;
+	border: #323232 solid thick;
+	min-height: 300px;
+}
+
+#bucket-inner h2{
+	color: #eeeeee;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+#bucket-inner p{
+	color: #FFFFFF;
+}
+
+.bucket-cta-btn{
+	position: relative;
+	
+}
+
+/*Three Buckets styles End*/
+
+
+/* Notify Capture */
+
+#notify-capture{
+	min-height: 300px;
+	background: #555;
+	align-content: center;
+	text-align: center;
+}
+
+
+#notify-capture-inner{
+	position:relative;
+	top:50px;
+}
+
+#notify-capture-inner h2{
+	color: #B34FFF;
+}
+
+#notify-capture-inner h5{
+	color: #EBEBEB;
+}
+
+#notify-capture-inner form{
+	padding-top: 50px;
+}
+
+/* Footer Buckets */
+
+#footer-buckets{
+	background: #5A5A5A;
+	color: #FFFFFF;}
+
+#three-footer-buckets{
+	border-top: #662D91 thick solid;
+}
+
+/* Footer Bar */
+
+#footer-bar{
+	background: #662D91;
+	color:#D5D5D5;
+	border-top: #B34FFF thin solid;
+	min-height: 30px;
+}

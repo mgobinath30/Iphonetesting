@@ -1,0 +1,36 @@
+[04-Oct-2017 07:33:16 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:16 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:16 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:33:21 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:21 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:21 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:33:24 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:24 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:24 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:33:28 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:28 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:28 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:33:35 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:35 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:35 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:33:36 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:36 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:36 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:33:59 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:59 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:33:59 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:34:00 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:34:00 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:34:00 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:34:02 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:34:02 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:34:02 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:40:04 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:40:04 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:40:04 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:40:06 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:40:06 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:40:06 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38
+[04-Oct-2017 07:41:11 UTC] PHP Warning:  include(slider/embed.php): failed to open stream: No such file or directory in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:41:11 UTC] PHP Warning:  include(): Failed opening 'slider/embed.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/aphelioncoin/public_html/index.php on line 24
+[04-Oct-2017 07:41:11 UTC] PHP Fatal error:  Class 'RevSliderEmbedder' not found in /home/aphelioncoin/public_html/index.php on line 38

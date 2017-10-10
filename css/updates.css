@@ -1,0 +1,114 @@
+@media only screen and (max-width: 768px) {
+	.prpl-btn{
+		font-size: 16px!important;
+	}
+	
+}
+
+@media only screen and (max-width: 500px) {
+	h3{
+		font-size: 18px;
+	}
+	.prpl-btn{
+		font-size: 14px!important;
+	}
+	.inn{
+		font-size: 34px!important;
+	}
+	.flip{
+		width: 40px!important;
+		height: 66px!important;
+	}
+	.flip-clock-wrapper{
+		width: 100%!important;
+	}
+	.flip-clock-active{
+		line-height: 72px!important;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.inn{
+		font-size: 9px!important;
+	} 
+	.flip{
+		width: 18px!important;
+		height: 47px!important;
+	}
+	.flip-clock-wrapper{
+		width: 100%!important;
+	}
+	.flip-clock-active{
+		line-height: 72px!important;
+	}
+}
+.flip-clock-label{
+	display: none!important; 
+}
+
+#notify-capture .email-box{
+	max-width: 90%;
+    margin: 0 auto;
+}
+.stacktable td{
+	text-align: center;
+}
+.stacktable td img{
+	max-width: 100%;
+}
+.stacktable tr td:first-child{
+	vertical-align: middle!important;
+	font-weight: 500!important;
+	font-size: 16px;
+}
+.follow-us{
+	text-align: right;
+	float: right;
+}
+#temp-header{
+	background-image: url(../images/01e0b-slide1-background.jpg)!important;
+	text-align: center;
+}
+.slider-text1{
+	background: rgba(70,30,100,0.7);
+	padding: 5px 20px;
+	display: inline-block;
+	font-size: 26px;
+}
+
+.slider-text2{
+	background: rgba(255,255,255,0.7);
+	padding: 3px 5px;
+	display: inline-block;
+	font-size: 16px;
+	color: black;
+	font-family: 'Saira Condensed', sans-serif;
+	letter-spacing: 3px;
+	margin-left: -18%;
+}
+.slider-text3{
+	background: rgba(255,255,255,0.7);
+	padding: 3px 5px;
+	display: inline-block;
+	font-size: 16px;
+	color: black;
+	font-family: 'Saira Condensed', sans-serif;
+	letter-spacing: 3px;
+	margin-right: -18%;
+}
+.coin-wrapper{
+	background-image: url(../images/43296-slide1-coin-floating-01.png)!important;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20%;
+}
+
+.styled-select.slate select{
+	font-size: 15px!important;
+}
+#openModal input::placeholder, #openModal textarea::placeholder, .email-box::placeholder {
+  color: blueviolet;
+  font-size: 15px;
+}
+.email-box{
+	color: blueviolet;
+}
