@@ -1004,9 +1004,11 @@
         var loc = window.location.hash;
         if (loc === '#close' || count == 1) {
           $('body').css('overflow', 'hidden');
-        } else {
-          $('body').css('overflow', '');
         }
+      });
+
+      $("body").on(event, '.close', function (e) {
+          $('body').css('overflow', '');
       });
 
     });
