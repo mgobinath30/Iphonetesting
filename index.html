@@ -1004,7 +1004,7 @@
         var classn=e.target.className;
         count++;
         var loc = window.location.hash;
-        if (loc === '#close' || classn == "prpl-btn") {
+        if (loc === '#close' && classn == "prpl-btn") {
           var $body = $(document.body);
           var oldWidth = $body.innerWidth();
           $body.css("overflow", "hidden");
