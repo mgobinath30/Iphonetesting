@@ -1014,8 +1014,10 @@
         var loc = window.location.hash;
         if (loc === '#close' || classn == "prpl-btn") {
           $('body').css('position', 'fixed');
+          $('body').css('overflow', 'hidden');
         } else {
           $('body').css('position', '');
+          $('body').css('overflow', '');
         }
       });
     });
