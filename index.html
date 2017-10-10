@@ -997,13 +997,14 @@
     $(function () {
 
       var ua = navigator.userAgent,
-        event = (ua.match(/iPad/i) || ua.match(/iPhone/)) ? "touchstart" : "click";
+      event = (ua.match(/iPad/i) || ua.match(/iPhone/)) ? "touchstart" : "click";
       var count = 0;
-      $("body").on(event, '.prpl-btn', function (e) {
+      $("body").on(event, 'body', function (e) {
         setTimeout(()=>{
+        var classn=e.target.className;
         count++;
         var loc = window.location.hash;
-        if (loc === '#close' || count == 1) {
+        if (loc === '#close' || classn == "prpl-btn") {
           var $body = $(document.body);
           var oldWidth = $body.innerWidth();
           $body.css("overflow", "hidden");
@@ -1019,14 +1020,14 @@
       },500);
       });
 
-      $("body").on(event, '.close', function (e) {
+      /*$("body").on(event, '.close', function (e) {
         setTimeout(()=>{
         var $body = $(document.body);
         $body.css("overflow", "auto");
         $body.width("auto");
         $body.css("position", "");
       },500);
-      });
+      });*/
 
     });
   </script>
