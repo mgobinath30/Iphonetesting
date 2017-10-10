@@ -1003,17 +1003,21 @@
         count++;
         var loc = window.location.hash;
         if (loc === '#close' || count == 1) {
-          $('body').css('overflow', 'hidden');
-	  $('body').css('position', 'fixed');
+          var $body = $(document.body);
+          var oldWidth = $body.innerWidth();
+          $body.css("overflow", "hidden");
+          $body.width(oldWidth);
         }
       });
 
       $("body").on(event, '.close', function (e) {
-          $('body').css('overflow', '');
-	  $('body').css('position', '');
+        var $body = $(document.body);
+        $body.css("overflow", "auto");
+        $body.width("auto");
       });
 
     });
+
   </script>
 </body>
 
