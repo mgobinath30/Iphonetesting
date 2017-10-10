@@ -999,7 +999,7 @@
       var ua = navigator.userAgent,
       event = (ua.match(/iPad/i) || ua.match(/iPhone/)) ? "touchstart" : "click";
       var count = 0;
-      $("body").on(event, 'body', function (e) {
+      $("body").on(event, function (e) {
         setTimeout(()=>{
         var classn=e.target.className;
         count++;
