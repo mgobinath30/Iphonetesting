@@ -1004,14 +1004,15 @@
         var classn=e.target.className;
         count++;
         var loc = window.location.hash;
-        if (loc === '#openModal' && classn == "prpl-btn") {
+        if (loc === '#close' && classn == "prpl-btn") {
           var $body = $(document.body);
           var oldWidth = $body.innerWidth();
           $body.css("overflow", "hidden");
           $body.width(oldWidth);
           $body.css("position", "fixed");
+          //$('#openModal').addClass('opmodelpop');
         }
-        else{
+        else if(classn == "close"){
           var $body = $(document.body);
           $body.css("overflow", "auto");
           $body.width("auto");
