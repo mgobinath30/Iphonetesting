@@ -998,14 +998,13 @@
 
       var ua = navigator.userAgent,
         event = (ua.match(/iPad/i) || ua.match(/iPhone/)) ? "touchstart" : "click";
-
+        var count = 0;
         $("body").on(event, '.prpl-btn', function (e) {
+        count++;
         var loc = window.location.hash;
-        if (loc === '#close') {
-          $('body').css('position', 'fixed');
+        if (loc === '#close' || count == 1) {
           $('body').css('overflow', 'hidden');
         } else {
-          $('body').css('position', '');
           $('body').css('overflow', '');
         }
       });
