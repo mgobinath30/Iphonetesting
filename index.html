@@ -1010,7 +1010,13 @@
           $body.width(oldWidth);
           $body.css("position", "fixed");
         }
-      },1000);
+        else{
+          var $body = $(document.body);
+          $body.css("overflow", "auto");
+          $body.width("auto");
+          $body.css("position", "");
+          }
+      },500);
       });
 
       $("body").on(event, '.close', function (e) {
@@ -1019,7 +1025,7 @@
         $body.css("overflow", "auto");
         $body.width("auto");
         $body.css("position", "");
-      },1000);
+      },500);
       });
 
     });
