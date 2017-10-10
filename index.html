@@ -998,8 +998,8 @@
 
       var ua = navigator.userAgent,
         event = (ua.match(/iPad/i) || ua.match(/iPhone/)) ? "touchstart" : "click";
-        var count = 0;
-        $("body").on(event, '.prpl-btn', function (e) {
+      var count = 0;
+      $("body").on(event, '.prpl-btn', function (e) {
         count++;
         var loc = window.location.hash;
         if (loc === '#close' || count == 1) {
@@ -1007,6 +1007,7 @@
           var oldWidth = $body.innerWidth();
           $body.css("overflow", "hidden");
           $body.width(oldWidth);
+          stopBodyScrolling(true);
         }
       });
 
@@ -1014,10 +1015,17 @@
         var $body = $(document.body);
         $body.css("overflow", "auto");
         $body.width("auto");
+        stopBodyScrolling(false);
       });
 
+      function stopBodyScrolling(bool) {
+        if (bool === true) {
+          document.body.addEventListener("touchmove", freezeVp, false);
+        } else {
+          document.body.removeEventListener("touchmove", freezeVp, false);
+        }
+      }
     });
-
   </script>
 </body>
 
