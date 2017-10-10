@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aphelion-P2P Digital Trading Platform12</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/styles-v2.css" rel="stylesheet">
+<link href="css/updates.css" rel="stylesheet">
+<link href="css/stacktable.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<!-- <?php include 'slider/embed.php'; ?> -->
+<link rel="stylesheet" href="compiled/flipclock.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="compiled/flipclock.js"></script>
+</head>
+
+<body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+	<script src="js/jquery-1.11.3.min.js"></script>
+	--> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script> 
+<!-- captcha --> 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<?php RevSliderEmbedder::headIncludes(); ?>
+<div class="container">
+
+<!-- MAIN NAVIGATION -->
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-top">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#"><img src="images/logo-small-navbar-200px.png" id="brandlogo" class="img-responsive" alt="APHELION"></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About Aphelion</a></li>
+        <li><a href="#howitworks">How It Works</a></li>
+        <li><a href="#">Road Map</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#openModal-reg">Sign Up</a></li>
+        <li><a href="#openModal-login">Log In</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+		</nav>
+		<picture>
+			<!-- temp header -->
+			<div id="temp-header">
+				<link href="https://fonts.googleapis.com/css?family=Saira+Condensed:700" rel="stylesheet">
+				<img src="./images/only-logo.png" style="margin-top: 12%; max-width: 100%;">
+				<div class="slider-text1">World's First Decentralized P2P Trading Platform</div>
+				<br/><br/>
+				<div class="slider-text2">SOLVING THE LIMITS</div><br/>
+				<div class="slider-text3">OF CRYPTO EXCHANGES</div>
+			</div>
+			<div class="row container" id="prpl-btn">
+				<h3>Countdown to Crowdsale Launch: <span style="white-space: nowrap;">Nov 15, 2017 0:00:00 GMT</span></h3>
+			</div>
+			<div class="clock">
+
+				<div class="message"></div>
+			</div>
+
+			<script type="text/javascript">
+				var clock;
+
+				jQuery( document ).ready( function ( $ ) {
+
+					// Grab the current date
+					var currentDate = new Date();
+
+					// Set date
+					var futureDate = new Date( 2017, 11, 14, 17, 0, 0, 0 );
+
+					// Calculate the difference in seconds between the future and current date
+					var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+					// Instantiate a coutdown FlipClock
+
+					clock = new FlipClock( $( '.clock' ), diff, {
+						clockFace: 'DailyCounter',
+						countdown: true
+					} );
+				} );
+			</script>
+			<!-- MAIN SLIDER  
+    <div class="row container" id="top-slider">
+    		<?php // RevSliderEmbedder::putRevSlider('homepage-main-slider'); ?>
+    </div>
+   -->
+
+			<!-- DL Whitepaper -->
+				<div class="row container" id="prpl-btn">
+					<a class="prpl-btn" href="/docs/aphelion-whitepaper.pdf" download>Download Aphelion Whitepaper</a>
+				</div>
+				<!-- Presale Modal -->
+
+				<div class="row container" id="prpl-btn">
+					<h3>Presale Private Offer is Going on Now!</h3>
+					<a class="prpl-btn" href="#openModal">Apply for Presale Private Offer</a>
+				</div>
+			<div id="openModal" class="modalDialog">
+				<div style="max-width: 99%!important; border: solid #b34fff 1px">
+					<a href="#close" title="Close" class="close">X</a>
+					<form id="contact" action="" method="post">
+						<h4>Apply for Presale Opportunity</h4>
+						<fieldset>
+							<input placeholder="First Name" type="text" tabindex="1" required autofocus>
+						</fieldset>
+						<fieldset>
+							<input placeholder="Last Name" type="text" tabindex="2" required autofocus>
+						</fieldset>
+						<fieldset>
+							<input placeholder="Email Address" type="email" tabindex="3" required>
+						</fieldset>
+						<fieldset>
+							<label>Contribution Amount (USD Equivalent)</label>
+							<div class="styled-select slate">
+								<select id="myList" tabindex="4">
+									<option value="5000">5,000</option>
+									<option value="10000">10,000</option>
+									<option value="25000">25,000</option>
+									<option value="50000">50,000</option>
+									<option value="100000">100,000</option>
+									<option value="250000">250,000</option>
+									<option value="500000">500,000</option>
+									<option value="750000">750,000</option>
+									<option value="1000000">1,000,000</option>
+									<option value="2000000">2,000,000</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset>
+							<label>Currency</label>
+							<div class="styled-select slate">
+								<select id="myList-2" tabindex="4">
+									<option value="BTC">Bitcoin</option>
+									<option value="ETH">Ethereum</option>
+									<option value="NEO">NEO</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset>
+							<textarea placeholder="Type additional info here...." tabindex="5" required></textarea>
+						</fieldset>
+						<fieldset>
+							<button class="prpl-btn" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+						</fieldset>
+					</form>
+				</div>
+
+			</div>
+
+<!-- Login Screen -->
+<div id="openModal-login" class="modalDialog">
+  <div style="max-width: 99%!important"> <a href="#close" title="Close" class="close">X</a>
+    <form id="login" action="" method="post">
+      <h4>Access Control</h4>
+      <fieldset>
+        <input placeholder="Email Address" type="email" tabindex="1" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Password" type="password" tabindex="2" required>
+      </fieldset>
+      <br>
+      <div class="g-recaptcha" data-sitekey="6LdvBzMUAAAAAPwAB3i-vKPwl6vmEdT8FHtB2hDw"></div>
+      <br>
+      <fieldset>
+        <button class="prpl-btn flt-right" name="submit" type="submit" id="login-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+      <a href="#openModal-forgot">Forgot Password?</a>
+    </form>
+  </div>
+</div>
+
+<!-- Register Screen -->
+<div id="openModal-reg" class="modalDialog">
+  <div style="max-width: 99%!important"> <a href="#close" title="Close" class="close">X</a>
+    <form id="reg" action="" method="post">
+      <h4>Register</h4>
+      <fieldset>
+        <input placeholder="Email Address" type="email" tabindex="1" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Password" type="password" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Verify" type="password" tabindex="3" required>
+      </fieldset>
+      <br>
+      <div class="g-recaptcha" data-sitekey="6LdvBzMUAAAAAPwAB3i-vKPwl6vmEdT8FHtB2hDw"></div>
+      <br>
+      <fieldset>
+        <button class="prpl-btn flt-right" name="submit" type="submit" id="reg-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+      <a href="#openModal-forgot">Forgot Password?</a>
+    </form>
+  </div>
+</div>
+
+<!-- Forgot Password -->
+<div id="openModal-forgot" class="modalDialog">
+  <div style="max-width: 99%!important"> <a href="#close" title="Close" class="close">X</a>
+    <form id="reg" action="" method="post">
+      <h4>Forgot Password?</h4>
+      Enter your email address and we will send you reset instructions.
+      <fieldset>
+        <input placeholder="Email Address" type="email" tabindex="1" required>
+      </fieldset>
+      <div class="g-recaptcha" data-sitekey="6LdvBzMUAAAAAPwAB3i-vKPwl6vmEdT8FHtB2hDw"></div>
+      <br>
+      <fieldset>
+        <button class="prpl-btn flt-right" name="submit" type="submit" id="forgot-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+</div>			
+
+
+<!-- Video SLIDER 
+    
+    <div class="row container" id="top-slider">
+    		<?php /*?><?php RevSliderEmbedder::putRevSlider('overview-video-slider'); ?><?php */?>
+    </div>
+    -->
+
+			<!-- Contribute Slider -->
+			<!--
+     <div class="container" id=contribute-slider>
+     	<?php /*?><?php RevSliderEmbedder::putRevSlider('contribute-slider'); ?><?php */?>
+     </div>
+     -->
+			<!-- Notify by Email capture-->
+			<div class="row" id="notify-capture">
+				<div id="notify-capture-inner">
+					<span class="h-join">Join Aphelion</span>
+					<form class="form-inline">
+						<div class="form-group">
+							<input type="email" class="email-box form-control" size="45" placeholder="Enter email">
+						</div>
+						<button type="submit" style="padding: 4px 20px 3px 20px" class="prpl-btn btn btn-default">Send Invitation</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- About Section-->
+
+			<div class="row container-fluid" id="about" name="about" style="text-align: center">
+				<span class="col-sm-4">
+					<picture>
+						<img src="images/aphelion-about-logo.png" alt="Aphelion" style="width:auto;max-width: 100%">
+					</picture>
+				</span>
+				<span class="col-sm-8 text-justify"><h3>About Aphelion:</h3>Aiming to be one of the first NEO tokens, Aphelion is building a next generation, tokenized, distribution mechanism to solve for the challenges plaguing the centralized cryptocurrency exchanges and trading platforms.   This protocol will allow for a groundbreaking peer-to-peer smart contract called a Distributed Exchange Asset Ledger (DEAL).  An APH DEAL fuels the Aphelion DApp built on the NEO blockchain that is open source, supports multi programming languages, transacts quickly and frees DEAL makers from: rules, latency and security breaches.
+
+APH tokens represent a new breed of digital asset exchange tool.  The breakthrough advancement is creating the protocol powering the truly decentralized exchanges directly between users as a distributed ledger DApp.  Aphelion’s own Distributed Exchange Asset Ledger (DEAL) is advancing p2p blockchain to the next level and finally into the total control of the users.
+
+Aphelion tokens are an escrow utility. They are the digital smart contract mechanism powering the DEAL.
+</span>
+			</div>
+			<!-- Why Neo -->
+			<div class="row container-fluid" id="whyneo" name="whyneo">
+				<span class="col-sm-4">
+					<picture>
+						<img src="images/neo-logo.png" alt="Aphelion" style="width:auto;max-width: 100%;">
+					</picture>
+				</span>
+				<span class="col-sm-8 text-justify"><h3>Why NEO?</h3>“NEO supports faster development and deployment of smart contracts and projects, as it enables developers to build on
+      	programming languages already familiar with them. We provide various advanced languages in the form of compiler,” says Da Hongfei (founder).
+      	“Besides .Net and Java, we will support Python and Go in the future which can cover more than 90 percent of developers.
+      	Compared with Ethereum, development has more smooth learning curve and shorter learning circle, allowing for fast introduction of projects.”
+      	</span>
+
+			</div>
+
+			<table id="card-table" class="table">
+				<thead>
+					<tr>
+						<th width="14%">Blockchain</th>
+						<th width="20%">Efficiency</th>
+						<th width="20%">Secure Contracts</th>
+						<th width="20%">Dev Languages</th>
+						<th width="20%">Scalability</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<img src="images/bitcoin-logo.png" alt="Bitcoin" style="width:auto;">
+						</td>
+						<td>
+							POW on ASIC machines uses vast amounts of energy
+						</td>
+						<td>
+							Pseudo-anonymity creates lack of integrity in transactions
+						</td>
+						<td>
+							C++
+						</td>
+						<td>
+							Peak transaction per second is limited to 3-4
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/ethereum-logo.png" alt="Ethereum" style="width:auto;">
+						</td>
+						<td>
+							GPU miners collectively using more energy than an entire country*
+						</td>
+						<td>
+							Vulnerable contract code prone to hacker attacks**
+						</td>
+						<td>
+							Solidity
+						</td>
+						<td>
+							Current peak transaction per second is 20
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/neo-logo-sm.png" alt="Neo" style="width:auto;">
+						</td>
+						<td>
+							dBFT ensures finality through highly efficient method
+						</td>
+						<td>
+							Integrated digital identity allows for real world applications
+						</td>
+						<td>
+							.Net, Java, Python and Go coming which can cover 90% of developers
+						</td>
+						<td>
+							Up to 10,000 transactions per second
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+				</tfoot>
+			</table>
+			<!-- Centralized Exchanges -->
+			<div class="row container-fluid" id="whyneo" name="whyneo">
+
+				<h3>Centralized Exchanges</h3>There is widespread use of several cryptocurrency trading platforms and exchanges. They are the clear mechanism for p2p trading, but they are not decentralized. They act as intermediaries between traders initiating trades and this poses a number of inherent challenges. First, exchanges set the rules for who can trade, what can be traded and when. There are countless stories of users accounts and even initiated trades being a deleted or frozen without explanation. We’ve also had numerous security breaches resulting in hundreds of millions (USD) being stolen. On top of these inherent challenges the exchanges are facing there is a complete lack of support facing many users today. These so-called decentralized exchanges are not decentralized at all, in fact quite the opposite.
+				<!-- Comparison Chart -->
+				<table style="width:100%; margin: 10px 0;">
+					<tr>
+						<th></th>
+						<th>Decentralized Exchanges</th>
+						<th>Centralized Exchanges</th>
+					</tr>
+					<tr>
+						<td>Equanimity between buyer & seller </td>
+						<td>
+							<picture>
+								<img src="images/check-box.png" alt="Check Box" style="width:auto;">
+							</picture>
+						</td>
+						<td></td>
+
+					</tr>
+					<tr>
+						<td>Loss of funds from exchange shutdown</td>
+						<td></td>
+						<td>
+							<picture>
+								<img src="images/check-box.png" alt="Check Box" style="width:auto;">
+							</picture>
+						</td>
+					</tr>
+					<tr>
+						<td>Potential of frozen accounts</td>
+						<td></td>
+						<td>
+							<picture>
+								<img src="images/check-box.png" alt="Check Box" style="width:auto;">
+							</picture>
+						</td>
+					</tr>
+					<tr>
+						<td>Income for exchange from transaction</td>
+						<td></td>
+						<td>
+							<picture>
+								<img src="images/check-box.png" alt="Check Box" style="width:auto;">
+							</picture>
+						</td>
+					</tr>
+					<tr>
+						<td>Trading security risks</td>
+						<td></td>
+						<td>
+							<picture>
+								<img src="images/check-box.png" alt="Check Box" style="width:auto;">
+							</picture>
+						</td>
+					</tr>
+					<tr>
+						<td>Deposits required</td>
+						<td></td>
+						<td>
+							<picture>
+								<img src="images/check-box.png" alt="Check Box" style="width:auto;">
+							</picture>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+<!-- Decentralized Exchanges -->     
+<div class="row container-fluid" id="dex" name="dex"> 	
+      	<h3>Decentralized Exchanges</h3>
+Several projects make the claim of being a P2P Decentralized Exchange (DEX). However there are very few built as dApps, completely within a blockchain. Some are centralized client to server operations that rely on an organization's hardware and proprietary software and others are simply a protocol that requires integration into existing centralized exchanges to function properly.  Aphelion aims to be one of the pioneers of DEX residing completely within the blockchain as a dApp, requiring only an open source user interface to access data and control smart contracts to trade digital assets.
+<strong>How it Works:</strong> As illustrated in the graphic below, if an app=frontend+server, then DApp = frontend + community + contracts. Aphelion contracts are code that runs on the global Aphelion decentralized peer-to-peer protocol.<br>
+	<picture>
+								<img src="images/graph_DApp-color.png" alt="dApp" style="width:auto;">
+							</picture>
+<h3><i>Join in our mission to build a collaborative, open source, p2p blockchain technology that finally decentralizes asset distribution and solves for the many challenges plaguing the centralized crypto exchanges and trading platforms.</i></h3>
+<h3>Roadmap</h3>
+		
+<ul class="timeline">
+    <li>
+        <div class="timeline-badge">
+          <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>RESEARCH</h4>
+            </div>
+            <div class="timeline-body">
+                <p>
+R&amp;D blockchain options<br>
+Identified industry leaders<br>
+Vetted various exchanges<br>
+Compiled cryptocurrency information </p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">Q1 2017</p>
+            </div>
+        </div>
+    </li>
+    
+    <li class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Strategy &amp; Design</h4>
+            </div>
+            <div class="timeline-body">
+                <p>Retained Legal Council<br>
+Created Concept<br>
+Coined Aphelion name<br>
+Began design activities<br>
+Identified problems and solved for them<br>
+Vetted the concept with impactful developers<br>
+Landed on NEO as the blockchain solution<br>
+</p>
+            </div>
+            <div class="timeline-footer">
+              <p class="text-right">Q2 2017</p>
+            </div>
+        </div>
+    </li>
+    
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Initial Business Rollout &amp; Pre-Marketing
+</h4>
+            </div>
+            <div class="timeline-body">
+                <p>Identified markets<br>
+Built partnership networks<br>
+Launched Landing Website<br>
+Compliance framework<br>
+Incorporated business unit<br>
+Formed Founders alliance agreement<br>
+Recruited and vetted advisers<br>
+</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">Q3 2017
+</p>
+            </div>
+        </div>
+    </li>
+    
+    <li class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Marketing &amp; ICO</h4>
+            </div>
+            <div class="timeline-body">
+                <p>Rollout Marketing Efforts<br>
+Developed influencer network<br>
+Built relationships with liquidity providers<br>
+Sealed deal with KYC verification entity<br>
+Finalized and released white paper<br>
+Updated website<br>
+Launched Presale<br>
+ICO kicks-off<br>
+ICO closes<br>
+Initial development Begins<br>
+Testnet deploid<br>
+Reach expands<br>
+PR begins<br>
+Regulatory compliance updates
+</p>
+            </div>
+            <div class="timeline-footer">
+              <p class="text-right">Q4 2017</p>
+            </div>
+        </div>
+    </li>
+    
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Distribution &amp; Development
+</h4>
+            </div>
+            <div class="timeline-body">
+                <p>Tokens are distributed<br>
+Deep development deploys<br>
+Marketing continues<br>
+Exchange registrations begin<br>
+Token Testing<br>
+</p>
+            </div>
+            <div class="timeline-footer">
+              <p class="text-right">Q1 2018</p>
+            </div>
+        </div>
+    </li>
+    
+    <li  class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Open for Business</h4>
+            </div>
+            <div class="timeline-body">
+               <p>Aphelion community development & growth
+Market analysis
+Competitive reviews
+Ongoing announcements
+Continued championing APH in the industry
+Cement Aphelion’s place in the universe
+</p> 
+            </div>
+            <div class="timeline-footer primary">
+              <p class="text-right">May, 2017</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>MARKETING STRATEGY COMPLETE</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer">
+              <p class="text-right">June, 2017</p>
+            </div>
+        </div>
+    </li>
+    
+    <li  class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>R&amp;D TESTNET DEPLOYED</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer primary">
+              <p class="text-right">July, 2017</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>MARKETING KICKOFF</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer">
+              <p class="text-right">Sept, 2017</p>
+            </div>
+        </div>
+    </li>
+    
+    <li  class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>PRIVATE COIN OFFERING</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer primary">
+              <p class="text-right">Oct 15, 2017</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>BLOCKCHAIN DEVELOPMENT</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer">
+              <p class="text-right">Nov 15, 2017</p>
+            </div>
+        </div>
+    </li>
+    
+    <li  class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>ICO CROWD SALE BEGINS</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer primary">
+              <p class="text-right">Dec 15, 2017</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>ICO COMPLETE</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer">
+              <p class="text-right">Jan, 2018</p>
+          </div>
+        </div>
+    </li>
+    
+    <li  class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>TOKEN AUDIT </h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer primary">
+              <p class="text-right">Jan , 2017</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>TOKEN RELEASE</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer">
+              <p class="text-right">Jan, 2018</p>
+          </div>
+        </div>
+    </li>
+    
+    <li  class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>OPEN FOR BUSINESS</h4>
+            </div>
+            <div class="timeline-body">
+                
+            </div>
+            <div class="timeline-footer primary">
+              <p class="text-right">2018 Q1</p>
+            </div>
+        </div>
+    </li>
+    <li class="clearfix no-float"></li>
+</ul>
+			<!-- Team Members Slider -->
+
+			<section id="team" class="text-center section">
+				<div class="container">
+					<h2><span class="highlight_secondary">Team</span></h2>
+<div class="hr big_size_hr invisible_hr">
+						<i class="fa fa-"></i>
+					</div>
+
+					<div class="hr invisible_hr">
+						<i class="fa fa-"></i>
+					</div>
+
+					<div class="row">
+						<div class="col-md-2 col-sm-4 col-xs-6" id="team">
+							<!-- add col-md-offset-1 for 5 members -->
+							<div class="team">
+								<div class="team-image">
+									<a href="#">
+              <img src="https://dummyimage.com/450x450/d9dadc/1c1f24.png&text=+" class="img-circle img-responsive">
+            </a>
+								
+									<div class="team-links">
+										<div class="team-links-list">
+											<a href="#" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a>
+										</div>
+										<!-- /.team-links-list -->
+									</div>
+									<!-- /.team-links -->
+								</div>
+								<!-- /.team-image -->
+								<div class="team-content">
+									<div class="team-name">
+										<h5>Adi Ben-Air</h5>
+									</div>
+									<div class="team-role">Blockchain Engineer</div>
+									<div class="team-description"></div>
+								</div>
+								<!-- /.team-content -->
+							</div>
+							<!-- /.team -->
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<div class="team">
+								<div class="team-image">
+									<a href="#">
+              <img src="https://dummyimage.com/450x450/d9dadc/1c1f24.png&text=+" class="img-circle img-responsive">
+            </a>
+								
+									<div class="team-links">
+										<div class="team-links-list">
+											<a href="#" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a>
+										</div>
+										<!-- /.team-links-list -->
+									</div>
+									<!-- /.team-links -->
+								</div>
+								<!-- /.team-image -->
+								<div class="team-content">
+									<div class="team-name">
+										<h5>Colan Sewell</h5>
+									</div>
+									<div class="team-role">Lead Analyst</div>
+									<div class="team-description"></div>
+								</div>
+								<!-- /.team-content -->
+							</div>
+							<!-- /.team -->
+						</div>
+						<div class="clearfix hidden-md hidden-lg"></div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<div class="team">
+								<div class="team-image">
+									<a href="#">
+              <img src="https://dummyimage.com/450x450/d9dadc/1c1f24.png&text=+" class="img-circle img-responsive">
+            </a>
+								
+									<div class="team-links">
+										<div class="team-links-list">
+											<a href="#" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a>
+										</div>
+										<!-- /.team-links-list -->
+									</div>
+									<!-- /.team-links -->
+								</div>
+								<!-- /.team-image -->
+								<div class="team-content">
+									<div class="team-name">
+										<h5>Andrew Morrell</h5>
+									</div>
+									<div class="team-role">Lead Software Engineer</div>
+									<div class="team-description"></div>
+								</div>
+								<!-- /.team-content -->
+							</div>
+							<!-- /.team -->
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<div class="team">
+								<div class="team-image">
+									<a href="#">
+              <img src="https://dummyimage.com/450x450/d9dadc/1c1f24.png&text=+" class="img-circle img-responsive">
+            </a>
+								
+									<div class="team-links">
+										<div class="team-links-list">
+											<a href="#" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a>
+										</div>
+										<!-- /.team-links-list -->
+									</div>
+									<!-- /.team-links -->
+								</div>
+								<!-- /.team-image -->
+								<div class="team-content">
+									<div class="team-name">
+										<h5>Joe Debuzna</h5>
+									</div>
+									<div class="team-role">Product Advisor</div>
+									<div class="team-description"></div>
+								</div>
+								<!-- /.team-content -->
+							</div>
+							<!-- /.team -->
+						</div>
+						<div class="clearfix hidden-md hidden-lg"></div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<div class="team">
+								<div class="team-image">
+									<a href="#">
+              <img src="https://dummyimage.com/450x450/d9dadc/1c1f24.png&text=+" class="img-circle img-responsive">
+            </a>
+								
+									<div class="team-links">
+										<div class="team-links-list">
+											<a href="#" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a>
+										</div>
+										<!-- /.team-links-list -->
+									</div>
+									<!-- /.team-links -->
+								</div>
+								<!-- /.team-image -->
+								<div class="team-content">
+									<div class="team-name">
+										<h5>Shawn Owen</h5>
+									</div>
+									<div class="team-role">ICO Advisor</div>
+									<div class="team-description"></div>
+								</div>
+								<!-- /.team-content -->
+							</div>
+							<!-- /.team -->
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<div class="team">
+								<div class="team-image">
+									<a href="#">
+              <img src="https://dummyimage.com/450x450/d9dadc/1c1f24.png&text=+" class="img-circle img-responsive">
+            </a>
+								
+									<div class="team-links">
+										<div class="team-links-list">
+											<a href="#" target="_blank"><i class="fa fa-linkedin fa-1x " style="min-width: 10px;"></i></a>
+										</div>
+										<!-- /.team-links-list -->
+									</div>
+									<!-- /.team-links -->
+								</div>
+								<!-- /.team-image -->
+								<div class="team-content">
+									<div class="team-name">
+										<h5>Joshua Finkleman</h5>
+									</div>
+									<div class="team-role">ICO Advisor</div>
+									<div class="team-description"></div>
+								</div>
+								<!-- /.team-content -->
+							</div>
+							<!-- /.team -->
+						</div>
+					</div>
+				</div>
+	</div>
+	</div>
+
+	<div class="hr big_size_hr invisible_hr">
+		<i class="fa fa-"></i>
+	</div>
+
+	</div>
+	<!-- /.container -->
+	</section>
+
+	<!-- Footer Buckets -->
+
+	<div class="container">
+		<div class="row" id="footer-buckets">
+			<div class="col-lg-4 col-sm-4" id="three-footer-buckets">
+				<div id="">
+					<h4>CONTACT US</h4>
+					<p><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> info@aphelioncoin.com</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-4 follow-us" id="three-footer-buckets">
+				<div id="">
+					<h4>FOLLOW US</h4>
+					<i class="fa fa-facebook fa-2x " style="min-width: 40px;"></i>
+					<i class="fa fa-linkedin fa-2x " style="min-width: 40px;"></i>
+					<i class="fa fa-twitter fa-2x " style="min-width: 40px;"></i>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-4" id="three-footer-buckets">
+				<div id="">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer Bar -->
+	<div class="container" id="footer-bar">
+		<div class="col-md-2"><a href="#">Disclaimers | Privacy</a>
+		</div>
+		<div class="col-md-8 text-center">&copy;2017 Aphelion Coin - P2P Digital Asset Distribution - All Rights Reserved</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+
+	</div>
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write( '<script src="js/libs/jquery-1.7.min.js"><\/script>' )
+	</script>
+	</script>
+
+	<script src="stacktable.js" type="text/javascript"></script>
+
+	<script>
+		$( function () {
+			$( '#card-table' ).cardtable();
+		} );
+	</script>
+
+</body>
+
+</html>
