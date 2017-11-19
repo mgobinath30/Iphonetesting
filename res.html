@@ -283,8 +283,7 @@
                                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                     </button>
                                 </a>
-                                <a href="javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());
-                                " target="_blank" id="pinresthref">
+                                <a href="javascript:pinIt();" target="_blank" id="pinresthref">
                                     <button type="button" class="col-md-2 shareicon btn btn-primary pinterest">
                                         <i class="fa fa-pinterest" aria-hidden="true"></i>
                                     </button>
@@ -457,7 +456,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js" type="text/javascript"></script>
@@ -519,9 +518,17 @@
                 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
             return false;
         }
-     
 
+        //pinterest Share Link
+        function pinIt() {
+            var e = document.createElement('script');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('charset', 'UTF-8');
+            e.setAttribute('src', 'https://assets.pinterest.com/js/pinmarklet.js?r=' + Math.random() * 99999999);
+            document.body.appendChild(e);
+        }
     </script>
 
 </body>
+
 </html>
