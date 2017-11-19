@@ -458,17 +458,6 @@
         </div>
     </div>
     
-    <!--pin-->
-    <div id="pin1">
-
-<a href="javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-  aaa
-
-</a>
-
-</div>
-
-    <!--pin-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js" type="text/javascript"></script>
@@ -530,35 +519,9 @@
                 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
             return false;
         }
-        
-        $(document).ready(function() {
-
-    // Simple click event for optional humongous Pin It button.
-    $('#pin1click').click(function() {
-
-        $('#pin1click').hide();
-
-        // Send a click event to the actual image to invoke the Pinterest process.
-        $('#pin1 a img').click();
-
-        // Quick and dirty method to show/hide humongous logo during Pinterest pinning using default method in HTML Anchor.
-        setTimeout("$('#pin1click').show();", 1000);
-
-    });
-
-    // As above, quick and dirty method to show/hide humongous Pin-It Logo during Pinterest pinning.    
-    $("#pin1 a img").click(function() {
-
-        $('#pin1click').hide();
-
-        // This is the dirty part. A better method should be used to hide the logo.
-        setTimeout("$('#pin1click').show();", 1000);
-
-    });
-    
-    
-});
+     
 
     </script>
 
 </body>
+</html>
