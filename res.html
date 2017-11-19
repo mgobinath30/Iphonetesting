@@ -273,8 +273,7 @@
                                         <i class="fa fa-facebook-official" aria-hidden="true"></i>
                                     </button>
                                 </a>
-                                <a href="javascript:window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.buzzfeed.com%2Fsoniathomas%2F15-transgender-indians-we-absolutely-need-to-know-about&text=16+Transgender+Indians+We+Absolutely+Need+To+Know+About&via=SoKneeOh','Post on Twitter','width=600,height=500')"
-                                    target="_blank" id="twitterhref">
+                                <a href="javascript:tweetCurrentPage()" target="_blank" id="twitterhref">
                                     <button type="button" class="col-md-2 shareicon btn btn-primary twitter">
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </button>
@@ -284,8 +283,8 @@
                                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                     </button>
                                 </a>
-                                <a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.buzzfeed.com%2Fsoniathomas%2F15-transgender-indians-we-absolutely-need-to-know-about&media=https%3A%2F%2Fimg.buzzfeed.com%2Fbuzzfeed-static%2Fstatic%2F2017-11%2F17%2F6%2Fcampaign_images%2Fbuzzfeed-prod-fastlane-01%2F16-transgender-indians-we-absolutely-need-to-know-2-18942-1510919322-1_dblbig.jpg&description=16+Transgender+Indians+We+Absolutely+Need+To+Know+About"
-                                    target="_blank" id="pinresthref">
+                                <a href="javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());
+                                " target="_blank" id="pinresthref">
                                     <button type="button" class="col-md-2 shareicon btn btn-primary pinterest">
                                         <i class="fa fa-pinterest" aria-hidden="true"></i>
                                     </button>
@@ -342,14 +341,18 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12" id="sharemobile">
-                                <div class="col-xs-5  facebook">
-                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                                    <label>Share</label>
-                                </div>
-                                <div class="col-xs-5 twitter">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    <label>Share</label>
-                                </div>
+                                <a href="javascript:fbshareCurrentPage()" target="_blank">
+                                    <div class="col-xs-5  facebook">
+                                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                        <label>Share</label>
+                                    </div>
+                                </a>
+                                <a href="javascript:tweetCurrentPage()" target="_blank">
+                                    <div class="col-xs-5 twitter">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <label>Share</label>
+                                    </div>
+                                </a>
                                 <div type="button" class="col-xs-2 mreddit" data-toggle="modal" data-target="#myModal">
                                     <span class="glyphicon glyphicon-chevron-down"></span>
                                 </div>
@@ -367,10 +370,12 @@
                                         <h4 class="modal-title">Share This Article</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="twitter mtwitter">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                            <label>Twitter</label>
-                                        </div>
+                                        <a href="javascript:tweetCurrentPage()" target="_blank">
+                                            <div class="twitter mtwitter">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                <label>Twitter</label>
+                                            </div>
+                                        </a>
                                         <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://www.website.com." title="Share by Email">
                                             <div class="envelope menvelope">
                                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -503,6 +508,13 @@
         function fbshareCurrentPage() {
             window.open("https://www.facebook.com/sharer/sharer.php?u=" + escape(window.location.href) + "&t=" +
                 document.title, '',
+                'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+            return false;
+        }
+
+        // Twitter Share Link
+        function tweetCurrentPage() {
+            window.open("https://twitter.com/share?url=" + escape(window.location.href) + "&text=" + document.title, '',
                 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
             return false;
         }
